@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compileOnly files('libs/gensee_common.jar')
+    compileOnly files('libs/android-support-compat-26.0.0-alpha1.jar')
+    implementation files(rootProject.ext.android_sdk_path)
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
